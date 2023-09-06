@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Aespa Magazine</title>
+    <style>
+    body {
+        padding-top: 70px; 
+        }
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+    margin-bottom: 4rem;
+    }
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    }
+
+    /* Declare heights because of positioning of img element */
+    .carousel-item {
+    background-color: #363636;
+    }
+    .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+    }
+
+    #karina{
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100% !important;
+    }
+
+    #winter{
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100% !important;
+    }
+
+    #ningning{
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100% !important;
+    }
+
+    #giselle{
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100% !important;
+    }
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    }
+    .marketing h2 {
+    font-weight: 400;
+    }
+    .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+    }
+
+
+    .feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+    }
+
+    .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+    }
+
+    .text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
+    .text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
+    .text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+
+    .card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    }
+
+    .feature-icon-small {
+    width: 3rem;
+    height: 3rem;
+    }
+
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+    }
+
+    @media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+    }
+
+
+    </style>
+</head>
+<body>
+    <!-- narvar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark mb-4" >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img class="logo" src="https://tinyurl.com/msmrpdhv"  width="70px" height="15%" class="logo" alt="Responsive image">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"></a>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+                <a class="nav-link" style="color: white; " href="#intro">Introduction</a>
+            <li class="nav-item">
+                <li class="nav-item dropdown" data-bs-theme="dark">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                    Member
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#karina">Karina</a></li>
+                    <li><a class="dropdown-item" href="#winter">Winter</a></li>
+                    <li><a class="dropdown-item" href="#nigning">NingNing</a></li>
+                    <li><a class="dropdown-item" href="#giselle">Giselle</a></li>
+                    </ul>
+                </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="#career">Career</a>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="#album">Album</a>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- narvar -->
+
+    <!-- introduction -->
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <img class="d-block w-100" src="https://sv1.picz.in.th/images/2023/08/14/dW0w7y2.jpeg"   alt="First slide"> 
+            <div class="carousel-caption text-start">
+            </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <img class="d-block w-100" src="https://sv1.picz.in.th/images/2023/08/14/dW0wYT1.jpeg" alt="second slide">
+            <div class="carousel-caption">
+            </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <img class="d-block w-100" src="https://sv1.picz.in.th/images/2023/08/14/dW0wzjy.jpeg" alt="third slide">
+            <div class="carousel-caption text-end">
+            </div>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"  ></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+        <div class="px-4 py-5 my-5 text-center" id="intro" >
+            <h1 class="display-5 fw-bold text-body-emphasis" >Introduction</h1>
+            <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Quam id leo in vitae turpis. Odio eu feugiat pretium nibh ipsum consequat nisl. Massa massa ultricies mi quis hendrerit. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Libero volutpat sed cras ornare arcu. Volutpat blandit aliquam etiam erat velit. Id leo in vitae turpis. Dui id ornare arcu odio ut sem nulla pharetra diam. A condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Pellentesque sit amet porttitor eget. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Eget arcu dictum varius duis at consectetur lorem donec. Dolor sit amet consectetur adipiscing elit. Volutpat est velit egestas dui id. Sit amet dictum sit amet justo donec enim diam. Hac habitasse platea dictumst quisque sagittis.</p>
+        </div>
+    </div>
+    <!-- end introduction -->
+
+
+    <!-- member -->
+    <div class="container marketing">
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider" id="karina">
+
+        <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Karina</h2>
+            <p class="lead">Ipsum dolor sit amet consectetur. Donec ac odio tempor orci. Sollicitudin tempor id eu nisl nunc mi. Amet risus nullam eget felis. Dapibus ultrices in iaculis nunc sed. Nibh tellus molestie nunc non. Sagittis vitae et leo duis ut diam. Interdum consectetur libero id faucibus nisl. Quis varius quam quisque id diam vel quam elementum pulvinar. Vitae auctor eu augue ut lectus arcu bibendum at varius. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Adipiscing enim eu turpis egestas pretium aenean. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Sed libero enim sed faucibus turpis in eu mi. Ultrices neque ornare aenean euismod elementum nisi quis eleifend. In aliquam sem fringilla ut morbi. Tincidunt eget nullam non nisi.</p>
+        </div>
+        <div class="col-md-5 ">
+            <img  id="karina" src="https://sv1.picz.in.th/images/2023/08/14/dW03Hrg.jpeg" data-holder-rendered="true">
+        </div>
+        </div>
+
+        <hr class="featurette-divider" id="winter">
+
+        <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Winter</span></h2>
+            <p class="lead">Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. Diam maecenas sed enim ut sem. Ut ornare lectus sit amet est placerat in egestas erat. Diam phasellus vestibulum lorem sed. Nulla facilisi cras fermentum odio eu feugiat pretium nibh. Eu volutpat odio facilisis mauris sit. Imperdiet proin fermentum leo vel. Netus et malesuada fames ac turpis egestas integer eget aliquet. Netus et malesuada fames ac turpis egestas sed. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Amet purus gravida quis blandit turpis cursus. Mattis pellentesque id nibh tortor id. Tristique senectus et netus et malesuada. Diam vulputate ut pharetra sit amet. Facilisis magna etiam tempor orci eu lobortis. Risus feugiat in ante metus dictum at. Cras pulvinar mattis nunc sed.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img id="winter" src="https://sv1.picz.in.th/images/2023/08/14/dW03X0W.jpeg" data-holder-rendered="true">
+        </div>
+        </div>
+
+        <hr class="featurette-divider" id="giselle">
+        <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Giselle</h2>
+            <p class="lead">Facilisis volutpat est velit egestas dui id ornare arcu. Nunc non blandit massa enim. Enim sed faucibus turpis in eu mi. Velit aliquet sagittis id consectetur. Elit scelerisque mauris pellentesque pulvinar pellentesque. Maecenas pharetra convallis posuere morbi leo urna. Ultrices dui sapien eget mi. At lectus urna duis convallis convallis tellus id interdum. Ullamcorper a lacus vestibulum sed arcu non. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Integer eget aliquet nibh praesent tristique magna sit. Venenatis a condimentum vitae sapien pellentesque habitant morbi. Amet tellus cras adipiscing enim eu turpis egestas. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Sit amet risus nullam eget felis eget. Sed vulputate mi sit amet mauris. Morbi enim nunc faucibus a pellentesque sit amet porttitor.</p>
+        </div>
+        <div class="col-md-5">
+            <img id="giselle" src="https://sv1.picz.in.th/images/2023/08/14/dW038Qn.jpeg" data-holder-rendered="true">
+        </div>
+        </div>
+        <hr class="featurette-divider" id="nigning">
+
+        <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">NingNing</h2>
+            <p class="lead">Parturient montes nascetur ridiculus mus mauris vitae ultricies. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Mauris pellentesque pulvinar pellentesque habitant morbi tristique. Augue interdum velit euismod in pellentesque massa. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Dignissim cras tincidunt lobortis feugiat vivamus at augue. Id diam vel quam elementum pulvinar etiam. Sem viverra aliquet eget sit. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Enim blandit volutpat maecenas volutpat blandit. Porta non pulvinar neque laoreet suspendisse. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Nec ultrices dui sapien eget mi proin sed libero enim. Et leo duis ut diam quam nulla porttitor massa id.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img id="ningning"  src="https://sv1.picz.in.th/images/2023/08/14/dW03rNS.jpeg" data-holder-rendered="true">
+        </div>
+        </div>
+    </div>
+    <!-- end member -->
+
+    <!-- career -->
+    <div class="container py-4" id="career">
+        <header class="pb-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+        </a>
+        </header>
+    
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Career</h1>
+            <p class="col-md-8 fs-4">Nullam vehicula ipsum a arcu cursus vitae congue mauris. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Lacus laoreet non curabitur gravida. Diam sit amet nisl suscipit. Scelerisque purus semper eget duis at tellus at urna. Urna duis convallis convallis tellus id interdum. At ultrices mi tempus imperdiet nulla malesuada. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Facilisis mauris sit amet massa vitae tortor. Quis varius quam quisque id. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Ut morbi tincidunt augue interdum velit euismod in. Eu non diam phasellus vestibulum lorem. Lectus quam id leo in vitae turpis massa.</p>
+        </div>
+        </div>
+    </div>
+    <!-- end career -->
+
+    <!-- album -->
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom" id="album" >Album</h2>
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://bandlabimages.azureedge.net/v1.0/songs/20eb278b-f2bd-429a-9ee0-5aaf0f2bac72/640x640');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Oh my gosh!
+                    Don't you know I'm a Savage?</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="https://i.ytimg.com/vi/C0CXJR_ZbDE/maxresdefault.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small style="font-weight: bold; font-size: larger;">Savage</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://www.allkpop.com/upload/2021/01/content/282100/web_data/allkpop_1611885903_0001258316-001-20210129090532511.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">닮은 듯한 모습으로 내게
+                    네가 오던 날을 기억하고 있어</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="https://i.ytimg.com/vi/C0CXJR_ZbDE/maxresdefault.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small style="font-weight: bold; font-size: larger;">Fever</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/6/63/Aespa_-_My_World.png');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">You want my A to the Z
+                    But you won't 어림없지</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="https://i.ytimg.com/vi/C0CXJR_ZbDE/maxresdefault.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small style="font-weight: bold; font-size: larger;">Spicy</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+        <p class="lead mb-4">In ante metus dictum at tempor commodo ullamcorper a. Odio eu feugiat pretium nibh ipsum consequat nisl. Porttitor massa id neque aliquam vestibulum morbi blandit cursus risus. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Tristique senectus et netus et malesuada fames. Sagittis vitae et leo duis ut diam quam nulla. In vitae turpis massa sed. Arcu odio ut sem nulla pharetra diam sit. Ullamcorper sit amet risus nullam eget felis eget nunc. Lacus suspendisse faucibus interdum posuere lorem. Mi in nulla posuere sollicitudin aliquam. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Bibendum neque egestas congue quisque egestas diam in. Convallis tellus id interdum velit laoreet id. Amet mauris commodo quis imperdiet massa tincidunt nunc. Placerat vestibulum lectus mauris ultrices eros in. Felis eget nunc lobortis mattis aliquam. Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque.</p>
+        <footer class="pt-3 mt-4 text-body-secondary border-top">
+            © 2023
+            </footer>
+    </div>
+    <!-- end album -->
+</body>
+</html>
