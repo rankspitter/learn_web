@@ -7,19 +7,19 @@
             let worker = null;
             function createWorker() {
             worker = worker === null ? new Worker('worker.js') : worker;
-        }
+            }
 
             function terminateWorker() {
             worker !== null ? (worker.terminate(), worker = null) : null;
-        }
+            }
 
             var h1 = document.createElement("h2");
             h1.innerHTML = "Excercise 04 : Javascript&DOM";
             maincontainer.appendChild(h1);
             var button = document.createElement("button");
-            button.innerHTML = "Click me to play date and time";
-            button.style.display = "block";
-            button.style.position = "absolute";
+                button.innerHTML = "Click me to play date and time";
+                button.style.display = "block";
+                button.style.position = "absolute";
             maincontainer.appendChild(button);
 
             var button2 = document.createElement("button");
@@ -32,8 +32,8 @@
                 createWorker();
                 worker.postMessage('getTimeAndDate');
                 maincontainer.appendChild(button2);
-                button.style.display = "none";
-                button2.style.display = "block";
+                    button.style.display = "none";
+                    button2.style.display = "block";
                 worker.onmessage = function(e) {
                     button2.innerHTML = e.data.now;
                     button2.style.backgroundColor = e.data.color;
@@ -44,8 +44,8 @@
 
             button2.addEventListener("click", (e) => {
                 terminateWorker();
-                button2.style.display = "none";
-                button.style.display = "block";
+                    button2.style.display = "none";
+                    button.style.display = "block";
             });
 
             const br = ['br1','br2','br3'];
@@ -66,8 +66,8 @@
             }
             info.style.color = "pink";
             info.onmouseover = function() {
-                info.style.backgroundColor = "yellow";
-                info.style.color = "blue";
+                    info.style.backgroundColor = "yellow";
+                    info.style.color = "blue";
                 info.onmouseout = function() {
                     info.style.backgroundColor = "white";
                     info.style.color = "pink";
