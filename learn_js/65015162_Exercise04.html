@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="maincontainer"></div>
+        <script>
+            let worker = null;
+            function createWorker() {
+            worker = worker === null ? new Worker('worker.js') : worker;
+            }
+
+            function terminateWorker() {
+            worker !== null ? (worker.terminate(), worker = null) : null;
+            }
+
+            var h1 = document.createElement("h2");
+            h1.innerHTML = "Excercise 04 : Javascript&DOM";
+            maincontainer.appendChild(h1);
+            var button = document.createElement("button");
+                button.innerHTML = "Click me to play date and time";
+                button.style.display = "block";
+                button.style.position = "absolute";
+            maincontainer.appendChild(button);
+
+            var button2 = document.createElement("button");
+                button2.innerHTML = Date();
+                button2.style.position = "absolute"; 
+                button2.style.top = "0";
+                button2.style.right = "0";
+
+            button.addEventListener("click", (e) => {
+                createWorker();
+                worker.postMessage('getTimeAndDate');
+                maincontainer.appendChild(button2);
+                    button.style.display = "none";
+                    button2.style.display = "block";
+                worker.onmessage = function(e) {
+                    button2.innerHTML = e.data.now;
+                    button2.style.backgroundColor = e.data.color;
+                    button.innerHTML = e.data.now;
+                    button.style.backgroundColor = e.data.color;
+                };
+            });
+
+            button2.addEventListener("click", (e) => {
+                terminateWorker();
+                    button2.style.display = "none";
+                    button.style.display = "block";
+            });
+
+            const br = ['br1','br2','br3'];
+            for ( i = 0; i < br.length  ; i++) {
+                br[i] = document.createElement("br");
+                maincontainer.appendChild(br[i]);
+            }
+
+            var info = document.createElement("u");
+            var ul_personal = document.createElement("ul");
+            ul_personal.innerHTML = " <li> Name: Atiyut Yampean , ID 65015162 <br> <li>Subject: Web Application Development <br> <li>Semester:Term1";
+            info.innerHTML = "Personal Info<br>";
+            maincontainer.appendChild(info);
+            maincontainer.appendChild(ul_personal);
+            ul_personal.style.display = "none";
+            info.onclick = function() {
+                ul_personal.style.display = ul_personal.style.display == "none" ? "block" : "none";
+            }
+            info.style.color = "pink";
+            info.onmouseover = function() {
+                    info.style.backgroundColor = "yellow";
+                    info.style.color = "blue";
+                info.onmouseout = function() {
+                    info.style.backgroundColor = "white";
+                    info.style.color = "pink";
+                }
+            }
+
+            var snap = document.createElement("h1");
+            snap.innerHTML = "Snap Shot";
+            maincontainer.appendChild(snap);
+
+            var snap_img = document.createElement("ul");
+            snap_img.innerHTML=" <li id = firework onclick=changeImage(this.id)><u style=color:blue><a style=color:blue>Fire work</a></u> <br><li id = crest onclick=changeImage(this.id)> <u style=color:blue><a style=color:blue>Crest</a> </u>  <br><li id = action onclick=changeImage(this.id)> <u style=color:blue><a>Action</a></u>  <br><li id = buffolo onclick=changeImage(this.id) > <u style=color:blue><a style=color:blue>Buffolo</a></u>  ";
+            maincontainer.appendChild(snap_img);
+            var br_snap = document.createElement("br");
+            maincontainer.appendChild(br_snap);
+
+            var change = document.createElement("img");
+                change.style.width = "500px";
+                change.style.height = "500px";
+                change.style.display = "none";
+                maincontainer.appendChild(change);
+
+            function changeImage(click_id){
+                img1.style.display = "none";
+                change.style.display = "block";
+                const imageUrls = {
+                firework: "https://sv1.picz.in.th/images/2023/09/13/dWnZ9SN.jpeg",
+                crest: "https://sv1.picz.in.th/images/2023/09/13/dWnZTgV.jpeg",
+                action: "https://sv1.picz.in.th/images/2023/09/13/dWnZhqv.jpeg",
+                buffolo: "https://sv1.picz.in.th/images/2023/09/13/dWnZkHE.jpeg"
+                };
+                change.src = imageUrls[click_id] || "";
+            }
+
+            var img1 = document.createElement("img");
+                img1.src = "https://sv1.picz.in.th/images/2023/09/13/dWnKdmg.png";
+                img1.style.width = "500px";
+                img1.style.display = "block";
+            maincontainer.appendChild(img1);
+
+        </script>
+    </body>
+</html>
