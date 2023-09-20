@@ -1,0 +1,86 @@
+body{
+margin:0px;
+padding:0px;
+width:100%;
+height:100%;
+background-color:#6A686A;
+}
+
+.App{
+text-align:center;
+color:#F8D214;
+}
+
+
+
+.item1 { grid-area: Content; 
+        text-align: left;
+        padding: 10px;
+        width: 100%;
+}
+.item2 { grid-area: Image;  
+}
+.item3 { grid-area: Click;
+  padding-bottom: 20px;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'Content Content Image'
+    'Click Click Click';
+  gap: 10px;
+  background-color: #FDEBD7;
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 15px;
+  color: black;
+}
+
+.grid-container > div {
+  font-size: 30px;
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+  padding: 20px;
+  object-fit: contain;
+}
+
+p {
+  font-size: 20px;
+}
+
+.result {
+  font-size: 30px;
+  border: 3px solid black;
+  font-weight: bold;
+  color: #8C40E4 ;
+  background-color: #79E300;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  margin-top: -60px;
+  width:fit-content;
+}
+
+
+button{
+  padding: 10px;
+  font-size: 20px;;
+}
+
+.bt1{
+  margin-right: 130px; 
+} 
+
+.bt2{
+  margin-right: -20px;
+}
+
+
